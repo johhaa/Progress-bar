@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>progress bar</title>
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <!-- Основной контейнер 320 х 568 -->
+  <div class="container">
+    <div class="progress-label">
+      <p class="progress-label__text">Progress</p>
+    </div> 
+    <!-- Контейнер с прогресс баром -->
+    <div class="progress-bar">
+      <svg class="progress-ring--background" width="144" height ="144">  
+        <circle
+          stroke="#EAF0F6" 
+          stroke-width="8"
+          cx="72"
+          cy="72"
+          r="62.4" 
+          fill="transparent"
+        />
+      </svg> 
+      <svg class="progress-ring" width="144" height ="144">  
+        <circle 
+          class="progress-ring__circle" 
+          stroke="#005CFF" 
+          stroke-width="8"
+          cx="72"
+          cy="72"
+          r="62.4" 
+          fill="transparent"
+        />
+      </svg>
+    </div>
+    <!-- Контейнер с кнопками -->
+    <div class="buttons">
+      <div class="btn">
+        <label>
+          <input type="text" class="percent">
+        </label>
+        Value
+      </div>
+      <div class="btn">
+        <label class="switch">
+          <input type="checkbox" class="checkbox-animate switch__input">
+          <span class="switch__slider"></span>
+        </label>
+        Animate
+      </div> 
+      <div class="btn">
+        <label class="switch">
+          <input type="checkbox" class="checkbox-hidden switch__input">
+          <span class="switch__slider"></span>
+        </label>
+        Hidden
+      </div>             
+    </div>  
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
+
+
+
